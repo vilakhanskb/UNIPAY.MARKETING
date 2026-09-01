@@ -23,6 +23,14 @@
         <div class="module-workflow-map reveal"><div class="workflow-head"><span>Mobile App</span><span>Backoffice Portal</span></div>${list(data.workflowMap, (item) => `<article><strong>${item[0]}</strong><i>→</i><p>${item[1]}</p></article>`)}</div>
       </div>
     </section>` : '';
+  const roleSection = data.roleWorkflows?.length ? `
+    <section class="role-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow light"><span></span>Role-based MiniApp</p><h2>MiniApp ດຽວ<br />3 ບົດບາດການເຮັດວຽກ</h2></div><p>ຜູ້ໃຊ້ເລືອກຮ້ານ ແລະສາຂາກ່ອນເຂົ້າ UniPOS. ເມນູ ແລະຂອບເຂດຂໍ້ມູນຈະຖືກກຳນົດຕາມ Role ທີ່ໄດ້ຮັບມອບໝາຍ.</p></div>
+        <div class="role-grid">${list(data.roleWorkflows, (role, index) => `<article class="role-card reveal delay-${index}"><div class="role-card-head"><span>0${index + 1}</span><b>${role.code}</b></div><h3>${role.label}</h3><p class="role-pitch">${role.pitch}</p><p class="role-scope">${role.scope}</p><ol>${list(role.steps, (step) => `<li>${step}</li>`)}</ol></article>`)}</div>
+        <div class="role-control-note reveal"><span>ຫຼັກການຄວບຄຸມ</span><p>ບັນຊີດຽວສາມາດມີຫຼາຍຮ້ານ ຫຼືຫຼາຍບົດບາດໄດ້; ສິດຈະຖືກຜູກກັບ Merchant, ສາຂາ ແລະ Role ເພື່ອໃຫ້ເຫັນສະເພາະງານທີ່ຮັບຜິດຊອບ.</p></div>
+      </div>
+    </section>` : '';
 
   root.innerHTML = `
     <section class="module-hero">
@@ -44,6 +52,8 @@
     <section class="module-proof"><div class="container proof-strip reveal"><span>UI ຈິງ · ${data.label}</span><p>${data.proof}</p></div></section>
 
     ${appEvidenceSection}
+
+    ${roleSection}
 
     <section class="module-intro"><div class="container intro-grid"><div class="reveal"><p class="eyebrow"><span></span>Business value</p><h2>${data.introTitle}</h2><p>${data.intro}</p></div><div class="benefit-list">${list(data.benefits, (item, index) => `<article class="reveal delay-${Math.min(index, 2)}"><span>${item[0]}</span><div><h3>${item[1]}</h3><p>${item[2]}</p></div></article>`)}</div></div></section>
 

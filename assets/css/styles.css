@@ -308,6 +308,24 @@ img, svg { display: block; max-width: 100%; }
 .module-workflow-map .workflow-head, .module-workflow-map article { grid-template-columns: minmax(180px, .8fr) 45px minmax(260px, 1.2fr); }
 .module-workflow-map i { color: var(--module-color, var(--mint-dark)); background: var(--module-soft, var(--mint-soft)); }
 
+.role-section { padding: 105px 0; color: #fff; background: var(--ink); }
+.role-section .section-heading h2 { color: #fff; }
+.role-section .section-heading > p { color: #abc1c4; }
+.role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.role-card { min-height: 500px; padding: 28px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.14); border-radius: 24px; background: linear-gradient(160deg, rgba(255,255,255,.075), rgba(255,255,255,.025)); }
+.role-card-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.role-card-head > span { color: #7ce6dc; font-size: .7rem; font-weight: 800; }
+.role-card-head b { padding: 7px 11px; border: 1px solid rgba(124,230,220,.28); border-radius: 999px; color: #7ce6dc; background: rgba(124,230,220,.08); font-size: .66rem; letter-spacing: .08em; }
+.role-card h3 { margin: 38px 0 10px; color: #fff; font-size: 1.2rem; }
+.role-pitch { min-height: 76px; margin: 0; color: #d8e5e6; font-size: .88rem; }
+.role-scope { margin: 20px 0; color: #9fb8bb; font-size: .8rem; }
+.role-card ol { margin: auto 0 0; padding: 0; list-style: none; counter-reset: role-steps; }
+.role-card li { position: relative; padding: 12px 0 12px 38px; border-top: 1px solid rgba(255,255,255,.11); color: #d4e2e4; font-size: .79rem; counter-increment: role-steps; }
+.role-card li::before { content: counter(role-steps); position: absolute; left: 0; top: 10px; width: 23px; height: 23px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: #7ce6dc; font-size: .62rem; font-weight: 800; }
+.role-control-note { margin-top: 18px; padding: 22px 26px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 24px; border: 1px solid rgba(255,255,255,.14); border-radius: 18px; background: rgba(255,255,255,.05); }
+.role-control-note span { color: #7ce6dc; font-size: .7rem; font-weight: 800; white-space: nowrap; }
+.role-control-note p { margin: 0; color: #b8cbcd; font-size: .82rem; }
+
 .problem-section { padding: 105px 0; color: #fff; background: var(--ink); }
 .problem-section .feature-heading { max-width: 850px; }
 .problem-section .feature-heading h2 { color: #fff; }
@@ -361,6 +379,7 @@ img, svg { display: block; max-width: 100%; }
   .module-hero-copy { max-width: 720px; }
   .module-window, .hero-ui { max-width: 720px; margin: 0 auto; transform: none; }
   .capability-groups { grid-template-columns: 1fr; }
+  .role-grid { grid-template-columns: 1fr; }
   .capability-group h3 { min-height: 0; }
   .app-phone-gallery { grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .app-phone { padding: 12px; border-radius: 22px; }
@@ -413,17 +432,20 @@ img, svg { display: block; max-width: 100%; }
   .module-hero { padding: 120px 0 65px; }
   .module-window .mock-sidebar { display: none; }
   .module-window .window-body { height: 330px; }
-  .module-intro, .features-section, .journey-section, .problem-section, .capability-section, .ui-section, .audience-section { padding: 75px 0; }
+  .module-intro, .features-section, .journey-section, .problem-section, .capability-section, .ui-section, .audience-section, .role-section { padding: 75px 0; }
   .app-evidence-section { padding: 75px 0; }
   .journey-copy { position: static; }
   .proof-strip { margin-top: 0; grid-template-columns: 1fr; gap: 12px; }
   .proof-strip > span { width: fit-content; }
-  .problem-grid, .audience-grid, .ui-gallery, .outcomes-card { grid-template-columns: 1fr; }
+  .problem-grid, .audience-grid, .ui-gallery, .outcomes-card, .role-grid { grid-template-columns: 1fr; }
   .problem-grid article { min-height: 220px; }
   .problem-grid h3 { margin-top: 35px; }
   .ui-shot figcaption { grid-template-columns: 1fr; gap: 10px; }
   .outcomes-card { padding: 32px 24px; gap: 30px; }
   .outcomes-card ul { grid-template-columns: 1fr; }
+  .role-card { min-height: auto; }
+  .role-pitch { min-height: 0; }
+  .role-control-note { grid-template-columns: 1fr; gap: 9px; }
   .surface-switch { grid-template-columns: 1fr; }
   .surface-arrow { height: 26px; transform: rotate(90deg); }
   .app-phone-gallery, .module-app-gallery { grid-template-columns: 1fr; }
