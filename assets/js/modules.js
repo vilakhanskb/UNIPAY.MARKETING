@@ -7,9 +7,6 @@ window.UNIPAY_MODULES = {
     summary: 'ຂາຍສິນຄ້າ, ຮັບຊຳລະ, ຄຸ້ມຄອງສະຕ໋ອກ, ບໍລິຫານສາຂາ ແລະເຫັນຜົນປະກອບການໄດ້ຈາກບ່ອນດຽວ.',
     tags: ['ຂາຍໜ້າຮ້ານ', 'Lao QR', 'ສະຕ໋ອກ', 'ຫຼາຍສາຂາ', 'Offline cash'],
     color: '#079b91', soft: '#dff8f4',
-    nav: ['ພາບລວມ', 'ຮ້ານຄ້າ', 'ອໍເດີ', 'ສິນຄ້າ', 'ສະຕ໋ອກ', 'ລາຍງານ'],
-    metrics: [['ຍອດຂາຍມື້ນີ້','18.4M ₭','+12.4%'],['ຈຳນວນອໍເດີ','684','+8.2%'],['ສິນຄ້າໃກ້ໝົດ','12','ຕ້ອງກວດສອບ']],
-    table: [['Order #UP-1048','ສຳເລັດ','245,000 ₭'],['Order #UP-1047','Lao QR','185,000 ₭'],['Order #UP-1046','ເງິນສົດ','96,000 ₭']],
     introTitle: 'ການຂາຍທີ່ໄວຂຶ້ນ ພ້ອມຂໍ້ມູນທີ່ຊັດຂຶ້ນ',
     intro: 'UniPOS ຖືກອອກແບບສຳລັບຮ້ານຄ້າລາວ ຕັ້ງແຕ່ຮ້ານດຽວໄປຈົນເຖິງທຸລະກິດຫຼາຍສາຂາ. ທຸກການຂາຍຖືກເຊື່ອມກັບສະຕ໋ອກ ແລະລາຍງານໂດຍອັດຕະໂນມັດ.',
     benefits: [
@@ -39,7 +36,6 @@ window.UNIPAY_MODULES = {
     label: 'UniMarket', kicker: 'Connected wholesale commerce', title: 'ບໍລິຫານການຄ້າ', accentTitle: 'ຈາກອໍເດີຫາການຈັດສົ່ງ',
     summary: 'ເຊື່ອມຮ້ານຄ້າ, ສາງ, ຕົວແທນ, ພະນັກງານຂາຍ ແລະການສະຫຼຸບຍອດເຂົ້າໃນວົງຈອນດຽວ.',
     tags: ['Wholesale orders','Catalog','Branches','Dealers','Settlement'], color:'#2475d0', soft:'#e8f1ff',
-    nav:['ພາບລວມ','ຮ້ານຄ້າ','Catalog','ອໍເດີ','ສາງ','ລາຍງານ'], metrics:[['ອໍເດີທັງໝົດ','1,284','+9.5%'],['ກຳລັງຈັດສົ່ງ','86','On track'],['ມູນຄ່າອໍເດີ','42.6M ₭','+14.1%']], table:[['Order #UM-8024','ກຳລັງກຽມ','2,450,000 ₭'],['Order #UM-8023','ຈັດສົ່ງແລ້ວ','1,820,000 ₭'],['Order #UM-8022','ສຳເລັດ','3,160,000 ₭']],
     introTitle:'ຄວບຄຸມອໍເດີ ແລະເຄືອຂ່າຍການຄ້າໃຫ້ເຫັນເປັນພາບດຽວ', intro:'UniMarket ຊ່ວຍໃຫ້ທີມງານບໍລິຫານສິນຄ້າ, ຮ້ານ, ສາຂາ, ອໍເດີ ແລະການຈັດສົ່ງ ໂດຍມີຫຼັກຖານສະຖານະທີ່ກວດສອບໄດ້.',
     benefits:[['ຄົບ','ເຫັນອໍເດີຄົບວົງຈອນ','ຕິດຕາມຕັ້ງແຕ່ຮັບອໍເດີຈົນເຖິງສຳເລັດ ຫຼືຍົກເລີກ.'],['ກົງ','ສະຕ໋ອກກັບຄວາມຕ້ອງການ','ເຫັນສະຕ໋ອກຮ້ານ ແລະສາຂາກ່ອນຈັດສັນສິນຄ້າ.'],['ເຊື່ອມ','ບໍລິຫານເຄືອຂ່າຍ','ຈັດການຮ້ານ, Dealer, Salesman ແລະ Priority fee ຮ່ວມກັນ.']],
     features:[['01','Order operations','ກັ່ນຕອງ, ຕິດຕາມ, ຮັບສິນຄ້າ, ຍົກເລີກທັງໝົດ ຫຼືບາງສ່ວນ.'],['02','Catalog & assortment','ຄຸ້ມຄອງ metadata, ສິນຄ້າສູນກາງ ແລະລາຍການສຳລັບແຕ່ລະຮ້ານ.'],['03','Shops & branches','ກຳນົດຮ້ານ, ສາຂາ, ພື້ນທີ່ ແລະການພ້ອມໃຫ້ບໍລິການ.'],['04','Inventory operations','ເຫັນສະຕ໋ອກລະດັບ Merchant ແລະສາຂາ ພ້ອມຫຼັກຖານການເຄື່ອນໄຫວ.'],['05','Reconciliation','ກວດຄວາມສອດຄ່ອງຂອງອໍເດີ, ການຊຳລະ ແລະການສະຫຼຸບຍອດ.'],['06','Decision reports','ເບິ່ງອໍເດີ, Fulfilment, Payment, Inventory ແລະຄຸນນະພາບລູກຄ້າ.']],
@@ -47,7 +43,6 @@ window.UNIPAY_MODULES = {
   },
   users: {
     label:'ຈັດການຜູ້ໃຊ້', kicker:'Identity, access & content', title:'ສິດທີ່ເໝາະສົມ', accentTitle:'ສຳລັບທຸກໜ້າວຽກ', summary:'ບໍລິຫານບັນຊີ, ບົດບາດ, ຂອບເຂດຮ້ານ ແລະເນື້ອຫາທີ່ສະແດງໃນແອັບ.', tags:['Accounts','Roles','Merchant scope','Content','Audit'], color:'#b77a12', soft:'#fff4d8',
-    nav:['ພາບລວມ','ຜູ້ໃຊ້','ບົດບາດ','ເນື້ອຫາ','Shortcuts','Audit'], metrics:[['ຜູ້ໃຊ້ Active','12,480','+4.8%'],['ຄຳຂໍລໍອະນຸມັດ','18','Review'],['ເນື້ອຫາເຜີຍແຜ່','126','Published']], table:[['ນາງ ສຸດາ','Merchant Admin','Active'],['ທ້າວ ຄຳພອນ','Cashier','Active'],['ນາງ ມະນີ','Content Editor','Pending']],
     introTitle:'ໃຫ້ແຕ່ລະຄົນເຫັນສິ່ງທີ່ຕ້ອງເຮັດ', intro:'ການບໍລິຫານຜູ້ໃຊ້ທີ່ດີຊ່ວຍໃຫ້ທີມງານເຮັດວຽກໄດ້ຄ່ອງຕົວ ແລະຮັກສາຂໍ້ມູນສຳຄັນໃຫ້ຢູ່ໃນຂອບເຂດທີ່ຖືກຕ້ອງ.',
     benefits:[['ປອດໄພ','ຄວບຄຸມຕາມບົດບາດ','Owner, Admin, Cashier ແລະຜູ້ກວດສອບເຫັນຂໍ້ມູນຕ່າງກັນ.'],['ຊັດ','ກຳນົດຂອບເຂດຮ້ານ','ຈຳກັດການເຂົ້າເຖິງຕາມ Merchant ຫຼືສາຂາ.'],['ຄຸ້ມ','ຈັດການເນື້ອຫາ','ຄວບຄຸມ Banner, Menu, Blog, Comment ແລະ Shortcut ໃນຈຸດດຽວ.']],
     features:[['01','Profile lookup','ຄົ້ນຫາ ແລະກວດສອບຂໍ້ມູນຜູ້ໃຊ້ໂດຍມີການປົກປິດຂໍ້ມູນອ່ອນໄຫວ.'],['02','Roles & access','ຈັດສັນບົດບາດຂອງ Portal ແລະຂອບເຂດ Merchant.'],['03','Approval workflow','ກວດ ແລະອະນຸມັດຄຳຂໍກ່ອນສິດມີຜົນ.'],['04','Content publishing','ຈັດການ Banner, Menu, Blog ແລະເນື້ອຫາສຳລັບຜູ້ໃຊ້.'],['05','Shortcuts','ກຳນົດທາງລັດໃນແອັບໃຫ້ເໝາະກັບປະສົບການຜູ້ໃຊ້.'],['06','Audit evidence','ກວດຄືນວ່າໃຜປ່ຽນຫຍັງ ແລະເວລາໃດ.']],
@@ -55,7 +50,6 @@ window.UNIPAY_MODULES = {
   },
   wallet: {
     label:'Wallet', kicker:'Customer wallet operations', title:'ເຫັນວົງຈອນບັນຊີ', accentTitle:'ຈາກ KYC ຫາ Ledger', summary:'ຄຸ້ມຄອງລູກຄ້າ Wallet, ການຢືນຢັນຕົວຕົນ, ຍອດເງິນ, ການໂອນ ແລະປະຫວັດທຸລະກຳ.', tags:['KYC','Balances','Transfers','Ledger','Support'], color:'#2475d0', soft:'#e8f1ff',
-    nav:['ພາບລວມ','ລູກຄ້າ','KYC','ທຸລະກຳ','ຍອດເງິນ','Audit'], metrics:[['Wallet Active','58,240','+7.3%'],['KYC ລໍກວດ','42','In review'],['ມູນຄ່າທຸລະກຳ','86.2M ₭','Today']], table:[['TXN-240901-0824','ໂອນເງິນ','850,000 ₭'],['TXN-240901-0823','ຮັບເງິນ','320,000 ₭'],['TXN-240901-0822','ຊຳລະ QR','125,000 ₭']],
     introTitle:'ຮູ້ຈັກລູກຄ້າ ແລະເຫັນທຸກການເຄື່ອນໄຫວຂອງ Wallet', intro:'Wallet Backoffice ລວມຂໍ້ມູນ KYC, ບັນຊີ, ຍອດເງິນ, ຄູ່ທຸລະກຳ ແລະ Ledger history ເພື່ອຊ່ວຍທັງຝ່າຍປະຕິບັດການ, Support ແລະ Audit.',
     benefits:[['ຄົບ','Customer 360','ເບິ່ງ Profile, KYC, Wallet, Counterparty ແລະ Transaction ໃນບ່ອນດຽວ.'],['ໄວ','Support ໄດ້ໄວຂຶ້ນ','ຄົ້ນຫາບັນຫາ ແລະກວດສະຖານະກ່ອນໃຫ້ຄຳແນະນຳ.'],['ແມ່ນ','Ledger ທີ່ກວດສອບໄດ້','ອ່ານປະຫວັດບັນຊີຕາມລຳດັບເວລາ ແລະທີ່ມາ.']],
     features:[['01','Wallet overview','ເຫັນຈຳນວນລູກຄ້າ, ສະຖານະ, ຍອດ ແລະສັນຍານທີ່ຕ້ອງກວດ.'],['02','KYC queue','ກວດເອກະສານ, ສະຖານະ ແລະຫຼັກຖານການຕັດສິນໃຈ.'],['03','Customer investigation','ຄົ້ນຫາ Profile, Wallet, Counterparty ແລະປະຫວັດທີ່ກ່ຽວຂ້ອງ.'],['04','Transaction explorer','ກັ່ນຕອງຕາມວັນທີ, ປະເພດ, ສະຖານະ, ຈຳນວນ ແລະຄູ່ທຸລະກຳ.'],['05','Account support','ຮອງຮັບຂັ້ນຕອນ PIN, Password, Contact change ແລະ Session lifecycle.'],['06','Reports & audit','ສະຫຼຸບ Balance, Income, Expense ແລະ Audit ຂອງການບໍລິຫານ.']],
@@ -63,7 +57,6 @@ window.UNIPAY_MODULES = {
   },
   payments: {
     label:'ລະບົບຮັບຊຳລະ', kicker:'Partner & settlement operations', title:'ຕິດຕາມການຊຳລະ', accentTitle:'ຈາກ Transaction ຫາ Settlement', summary:'ຄວບຄຸມ Payment transaction, Partner, Public key, Webhook, ສຸຂະພາບລະບົບ ແລະຫຼັກຖານການສະຫຼຸບຍອດ.', tags:['Transactions','Partners','Webhooks','Health','T+1 Settlement'], color:'#b77a12', soft:'#fff4d8',
-    nav:['ພາບລວມ','ທຸລະກຳ','Partners','Webhooks','Settlement','Health'], metrics:[['ຊຳລະສຳເລັດ','98.7%','Healthy'],['ມູນຄ່າມື້ນີ້','126.4M ₭','+11.8%'],['ລໍສະຫຼຸບຍອດ','24','T+1']], table:[['PAY-982401','SUCCESS','1,250,000 ₭'],['PAY-982400','SETTLED','480,000 ₭'],['PAY-982399','PENDING','95,000 ₭']],
     introTitle:'ຈາກການຮັບເງິນ ຫາຫຼັກຖານການສະຫຼຸບຍອດ', intro:'Payment Operations ຊ່ວຍໃຫ້ທີມງານຕິດຕາມທຸລະກຳ ແລະການສື່ສານກັບ Partner ພ້ອມກວດຄວາມພ້ອມຂອງ API ແລະຂັ້ນຕອນ Settlement.',
     benefits:[['ທັນ','ເຫັນສະຖານະທັນເວລາ','ຄົ້ນຫາທຸລະກຳ ແລະອ່ານສະຖານະຈາກແຫຼ່ງຂໍ້ມູນທີ່ຮັບຜິດຊອບ.'],['ຄຸມ','ບໍລິຫານ Partner','ກວດ Lifecycle, Key, Webhook ແລະການເຊື່ອມ Merchant.'],['ກົງ','Settlement evidence','ເຫັນລາຍການທີ່ລໍ, ສຳເລັດ ຫຼືຕ້ອງການກວດຄືນ.']],
     features:[['01','Transaction explorer','ຄົ້ນຫາດ້ວຍ Reference, Partner, Merchant, ວັນທີ ແລະສະຖານະ.'],['02','Partner lifecycle','ກວດການເປີດໃຊ້, ການເຊື່ອມ Merchant ແລະການອະນຸມັດ.'],['03','Key governance','ຈັດການ Public key lifecycle ໂດຍມີຫຼັກຖານການປ່ຽນແປງ.'],['04','Webhook delivery','ເຫັນ Delivery, Retry, Failure ແລະຂໍ້ມູນສຳລັບວິເຄາະ.'],['05','Platform health','ກວດ API, Dependency ແລະ Runbook ເມື່ອລະບົບມີສັນຍານຜິດປົກກະຕິ.'],['06','Settlement operations','ຕິດຕາມ UniPOS, UniMarket ແລະ Partner settlement ຕາມຮອບ.']],
@@ -71,7 +64,6 @@ window.UNIPAY_MODULES = {
   },
   system: {
     label:'ຈັດການລະບົບ', kicker:'Realtime & job operations', title:'ເຫັນສຸຂະພາບລະບົບ', accentTitle:'ກ່ອນບັນຫາກະທົບລູກຄ້າ', summary:'ຕິດຕາມ API, Dependency, Background jobs, Realtime events ແລະ Webhook ພ້ອມຂໍ້ມູນສຳລັບແກ້ໄຂບັນຫາ.', tags:['Health checks','Jobs','Realtime','Events','Diagnostics'], color:'#079b91', soft:'#dff8f4',
-    nav:['ພາບລວມ','Health','Jobs','Realtime','Webhooks','Diagnostics'], metrics:[['Services healthy','18 / 20','2 degraded'],['Jobs ກຳລັງເຮັດວຽກ','36','Running'],['Events 1 ຊົ່ວໂມງ','48.2K','Live']], table:[['Payment settlement','Healthy','12:42:18'],['Wallet Watch','Running','12:41:54'],['Image refresh','Degraded','12:40:06']],
     introTitle:'ຈາກສັນຍານທາງເຕັກນິກ ຫາການລົງມືທີ່ຊັດເຈນ', intro:'Platform Operations ລວມສຸຂະພາບລະບົບ, ການເຮັດວຽກຂອງ Jobs ແລະ Realtime events ເພື່ອໃຫ້ທີມງານຮູ້ວ່າມີຫຍັງເກີດຂຶ້ນ ແລະຄວນເຮັດຫຍັງຕໍ່.',
     benefits:[['ໄວ','ຮູ້ບັນຫາໄວ','ສະແດງ Service, Dependency ແລະ Job ທີ່ Degraded ຫຼື Failed.'],['ຊັດ','ມີ Runbook ປະກອບ','ເຊື່ອມສັນຍານກັບ Owner ແລະແນວທາງແກ້ໄຂ.'],['ຮ່ວມ','ຫຼັກຖານຮ່ວມກັນ','ທີມງານໃຊ້ Event, Log summary ແລະ Correlation ດຽວກັນ.']],
     features:[['01','Dependency health','ຕິດຕາມ API, Database, Cache ແລະບໍລິການທີ່ພຶ່ງພາ.'],['02','Job monitor','ເຫັນຮອບເຮັດວຽກ, ຜົນສຳເລັດ, Failure ແລະ Retry.'],['03','Realtime events','ກວດ Event stream, Connection ແລະການສົ່ງຂໍ້ມູນແບບທັນເວລາ.'],['04','Webhook review','ຕິດຕາມ Callback, Delivery result ແລະລາຍການທີ່ຕ້ອງກວດ.'],['05','Operational controls','ຈັດການ Schedule ແລະການດຳເນີນງານທີ່ມີຂອບເຂດສິດຊັດເຈນ.'],['06','Support diagnostics','ລວມຂໍ້ມູນສຳລັບວິເຄາະ ໂດຍບໍ່ສະແດງ Secret.']],

@@ -7,11 +7,15 @@
     root.innerHTML = '<section class="module-hero"><div class="container"><h1>ບໍ່ພົບໂມດູນ</h1><a href="../../">ກັບໜ້າຫຼັກ</a></div></section>';
     return;
   }
+
   document.documentElement.style.setProperty('--module-color', data.color);
   document.documentElement.style.setProperty('--module-soft', data.soft);
   document.title = `${data.label} — UniPay Platform`;
 
-  const list = (items, renderer) => items.map(renderer).join('');
+  const list = (items, renderer) => (items || []).map(renderer).join('');
+  const imagePath = (src) => `../../assets/images/portal/${src}`;
+  const heroShot = data.screenshots?.[0];
+
   root.innerHTML = `
     <section class="module-hero">
       <div class="container module-hero-grid">
@@ -22,22 +26,29 @@
           <p class="lead">${data.summary}</p>
           <div class="module-tags">${list(data.tags, (item) => `<span>${item}</span>`)}</div>
         </div>
-        <div class="module-window reveal visible" aria-label="ຕົວຢ່າງ UI ${data.label}">
-          <div class="window-top"><span class="mini-logo">U</span><b>${data.label} · Backoffice</b><div class="window-actions"><i></i><i></i></div></div>
-          <div class="window-body">
-            <aside class="mock-sidebar">${list(data.nav, (item, index) => `<span class="${index === 0 ? 'active' : ''}">${item}</span>`)}</aside>
-            <div class="mock-content">
-              <div class="mock-heading"><div><small>Operations overview</small><strong>ພາບລວມມື້ນີ້</strong></div><span class="live-pill">● Live</span></div>
-              <div class="module-metric-row">${list(data.metrics, (item) => `<article><small>${item[0]}</small><strong>${item[1]}</strong><span>${item[2]}</span></article>`)}</div>
-              <div class="mock-table"><div class="mock-table-row head"><span>ລາຍການ</span><span>ສະຖານະ</span><span>ມູນຄ່າ</span></div>${list(data.table, (item) => `<div class="mock-table-row"><b>${item[0]}</b><span class="mock-status">${item[1]}</span><span>${item[2]}</span></div>`)}</div>
-            </div>
-          </div>
-        </div>
+        <figure class="real-ui-frame hero-ui reveal visible">
+          <a href="${imagePath(heroShot.src)}" target="_blank" rel="noreferrer" aria-label="ເປີດພາບ UI ${heroShot.title} ຂະໜາດເຕັມ"><img src="${imagePath(heroShot.src)}" alt="UI ຈິງ: ${heroShot.title}" width="1440" height="900" fetchpriority="high" /></a>
+          <figcaption><span class="verified-dot">●</span><b>Real Development UI</b><span>${heroShot.title}</span></figcaption>
+        </figure>
       </div>
     </section>
+
+    <section class="module-proof"><div class="container proof-strip reveal"><span>UI ຈິງ · ${data.label}</span><p>${data.proof}</p></div></section>
+
     <section class="module-intro"><div class="container intro-grid"><div class="reveal"><p class="eyebrow"><span></span>Business value</p><h2>${data.introTitle}</h2><p>${data.intro}</p></div><div class="benefit-list">${list(data.benefits, (item, index) => `<article class="reveal delay-${Math.min(index, 2)}"><span>${item[0]}</span><div><h3>${item[1]}</h3><p>${item[2]}</p></div></article>`)}</div></div></section>
+
+    <section class="problem-section"><div class="container"><div class="feature-heading reveal"><p class="eyebrow light"><span></span>The case for change</p><h2>ບັນຫາທີ່ ${data.label} ຖືກສ້າງຂຶ້ນມາເພື່ອແກ້</h2></div><div class="problem-grid">${list(data.problems, (item, index) => `<article class="reveal delay-${index}"><span>0${index + 1}</span><h3>${item[0]}</h3><p>${item[1]}</p></article>`)}</div></div></section>
+
     <section class="features-section"><div class="container"><div class="feature-heading reveal"><p class="eyebrow"><span></span>Core capabilities</p><h2>ຄວາມສາມາດຫຼັກຂອງ ${data.label}</h2></div><div class="feature-grid">${list(data.features, (item, index) => `<article class="feature-card reveal delay-${index % 3}"><span>${item[0]}</span><h3>${item[1]}</h3><p>${item[2]}</p></article>`)}</div></div></section>
+
+    <section class="capability-section"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow"><span></span>Module map</p><h2>ຂອບເຂດການດຳເນີນງານ<br />ແບບລະອຽດ</h2></div><p>ລາຍການຕໍ່ໄປນີ້ອີງຕາມໂຄງສ້າງເມນູໃນ Backoffice Portal ຈິງ ແລະຈັດກຸ່ມໃຫ້ເໝາະກັບການ Pitch.</p></div><div class="capability-groups">${list(data.capabilityGroups, (group, index) => `<article class="capability-group reveal delay-${index}"><span>0${index + 1}</span><h3>${group.title}</h3><ul>${list(group.items, (item) => `<li>${item}</li>`)}</ul></article>`)}</div></div></section>
+
+    <section class="ui-section"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow"><span></span>Real product evidence</p><h2>UI ຈາກລະບົບຈິງ</h2></div><p>ພາບຈາກ Development Portal ໃນພາສາລາວ. ຄ່າທີ່ສະແດງແມ່ນສະຖານະຂອງສະພາບແວດລ້ອມໃນເວລາບັນທຶກພາບ.</p></div><div class="ui-gallery ${data.screenshots.length === 1 ? 'single' : ''}">${list(data.screenshots, (shot, index) => `<figure class="ui-shot reveal delay-${index}"><a href="${imagePath(shot.src)}" target="_blank" rel="noreferrer"><img src="${imagePath(shot.src)}" alt="UI ຈິງ: ${shot.title}" width="1440" height="900" loading="lazy" /></a><figcaption><div><span>UI 0${index + 1}</span><h3>${shot.title}</h3></div><p>${shot.caption}</p></figcaption></figure>`)}</div></div></section>
+
     <section class="journey-section"><div class="container journey-grid"><div class="journey-copy reveal"><p class="eyebrow"><span></span>How it works</p><h2>${data.journeyTitle}</h2><p>ຂັ້ນຕອນຖືກອອກແບບໃຫ້ອ່ານງ່າຍ, ກວດສອບໄດ້ ແລະສົ່ງຕໍ່ວຽກລະຫວ່າງທີມໄດ້ຢ່າງຊັດເຈນ.</p></div><div class="journey-list">${list(data.journey, (item) => `<article class="reveal"><h3>${item[0]}</h3><p>${item[1]}</p></article>`)}</div></div></section>
+
+    <section class="audience-section"><div class="container"><div class="feature-heading reveal"><p class="eyebrow"><span></span>Built for the team</p><h2>ໃຜໄດ້ປະໂຫຍດຈາກ ${data.label}</h2></div><div class="audience-grid">${list(data.audiences, (item, index) => `<article class="reveal delay-${index}"><span>${String(index + 1).padStart(2, '0')}</span><h3>${item[0]}</h3><p>${item[1]}</p></article>`)}</div><div class="outcomes-card reveal"><div><p class="eyebrow light"><span></span>Business outcomes</p><h2>ຜົນລັບທີ່ທຸລະກິດສາມາດຄາດຫວັງ</h2></div><ul>${list(data.outcomes, (item) => `<li><span>✓</span>${item}</li>`)}</ul></div></div></section>
+
     <section class="module-cta"><div class="container"><div class="cta-card reveal"><div><p class="eyebrow light"><span></span>${data.label}</p><h2>${data.ctaTitle}</h2><p>ສຳຫຼວດໂມດູນອື່ນໆ ເພື່ອເຫັນວ່າຂໍ້ມູນ ແລະການດຳເນີນງານເຊື່ອມຕໍ່ກັນແນວໃດ.</p></div><a class="button button-light" href="../../#modules">ເບິ່ງທຸກໂມດູນ <span>→</span></a></div></div></section>`;
 
   if ('IntersectionObserver' in window) {
