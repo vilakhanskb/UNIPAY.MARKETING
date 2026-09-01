@@ -72,5 +72,63 @@
     }
   };
 
-  Object.entries(details).forEach(([key, value]) => Object.assign(modules[key], value));
+  const appEvidence = {
+    unipos: {
+      appScreenshots: [{ src: 'unipos-catalog.png', title: 'ໜ້າຂາຍໃນ UniPOS', caption: 'UI ຈິງຫຼັງເລືອກສາຂາ: ຄົ້ນຫາ, ກອງໝວດ, ປ່ຽນຮູບແບບການສະແດງ, ເບິ່ງ stock ແລະເພີ່ມສິນຄ້າ.' }],
+      workflowMap: [
+        ['ເລືອກສາຂາຂາຍ', 'ຮ້ານ, ສາຂາ, ບົດບາດ ແລະ Shift'],
+        ['ຄົ້ນຫາ/ສະແກນ ແລະເພີ່ມສິນຄ້າ', 'Catalog, Barcode, ລາຄາ ແລະ Stock ຕາມສາຂາ'],
+        ['ຢືນຢັນການຂາຍ ແລະຮັບຊຳລະ', 'Order, Payment reference, Stock movement ແລະ Settlement'],
+        ['ເບິ່ງປະຫວັດ/ສະຫຼຸບ', 'Sales history, Gross profit, Top products ແລະ Reports']
+      ]
+    },
+    unimarket: {
+      appScreenshots: [
+        { src: 'unimarket-catalog.png', title: 'Catalog ແລະ Promotion', caption: 'ເລືອກໝວດ, ຄົ້ນຫາດ້ວຍ Barcode/ລະຫັດ, ເບິ່ງລາຄາ, Promotion ແລະຈຳນວນພ້ອມຂາຍ.' },
+        { src: 'unimarket-product.png', title: 'ລາຍລະອຽດ ແລະຕົວເລືອກສິນຄ້າ', caption: 'ກວດຮ້ານຜູ້ສະໜອງ, Variant, ລາຄາ ແລະຈຳນວນກ່ອນເພີ່ມເຂົ້າກະຕ່າ.' }
+      ],
+      workflowMap: [
+        ['ຄົ້ນຫາ ແລະເລືອກໝວດ', 'Catalog Metadata, Assortment ແລະ Merchant visibility'],
+        ['ເລືອກ Variant/ຈຳນວນ', 'Price rule, Promotion, Merchant stock ແລະ Branch stock'],
+        ['ສ້າງອໍເດີ', 'Order operations, Payment status ແລະ Auto cancel'],
+        ['ຮັບສິນຄ້າ', 'Fulfilment, ຈຳນວນຮັບຈິງ, ຄືນສິນຄ້າ ແລະ Reconciliation']
+      ]
+    },
+    users: {
+      appScreenshots: [{ src: 'login-form.png', title: 'Login ດ້ວຍອີເມວ ຫຼືເບີໂທ', caption: 'ຈຸດເລີ່ມຂອງຜູ້ໃຊ້: ເລືອກຊ່ອງທາງ Login, ກູ້ລະຫັດຜ່ານ ຫຼືລົງທະບຽນ.' }],
+      workflowMap: [
+        ['Login ດ້ວຍ Email/Phone', 'ກວດບັນຊີ, Session ແລະສະຖານະການເຂົ້າໃຊ້'],
+        ['Login ດ້ວຍ Biometric', 'ຜູກກັບ Session ທີ່ອະນຸຍາດໃນອຸປະກອນ'],
+        ['ເປີດ MiniApp', 'Role, Merchant scope, Branch scope ແລະ Permission'],
+        ['ເຫັນ Banner/Shortcut/ຂ່າວ', 'Content lifecycle, Schedule, Publish ແລະ Audit']
+      ]
+    },
+    wallet: {
+      appScreenshots: [{ src: 'withdraw.png', title: 'ຖອນເງິນຜ່ານ ATM', caption: 'ໜ້າຖອນເງິນຈິງ: ເລືອກປະເພດຖອນ ແລະຄົ້ນຫາຜູ້ຮັບດ້ວຍເລກບັນຊີ, ອີເມວ ຫຼືເບີໂທ.' }],
+      workflowMap: [
+        ['ສົ່ງຂໍ້ມູນ KYC', 'KYC queue, Review, Decision ແລະ Audit evidence'],
+        ['ຝາກເງິນ', 'Deposit type, Payment callback, Wallet credit ແລະ Ledger'],
+        ['ໂອນເງິນ', 'Recipient validation, Transfer status, Counterparty ແລະ Ledger'],
+        ['ຖອນເງິນ', 'Withdraw type, Approval/rule, Wallet debit ແລະ Investigation']
+      ]
+    },
+    payments: {
+      workflowMap: [
+        ['ສະແກນ QR ໃນແອັບ', 'ສ້າງ Payment reference ແລະກຳນົດ Partner/Merchant'],
+        ['ຢືນຢັນການຊຳລະ', 'Transaction status, Callback ແລະ Webhook delivery'],
+        ['ຮັບຜົນສຳເລັດ/ລົ້ມເຫຼວ', 'Operations signal, Retry, Investigation ແລະ SLA'],
+        ['ປິດຮອບ', 'Settlement control, Reconciliation ແລະ Exception review']
+      ]
+    },
+    system: {
+      workflowMap: [
+        ['App ເອີ້ນ API/Realtime service', 'System health, Dependency status ແລະ Socket monitor'],
+        ['ການຂາຍ/ອໍເດີຖືກຊິງ', 'Background jobs, Schedule, Result ແລະ Retry'],
+        ['Payment callback ເຂົ້າລະບົບ', 'Callback investigation, Event publisher ແລະ Correlation'],
+        ['ເກີດບັນຫາໃນແອັບ', 'Diagnostics, Owner, Runbook ແລະ Recovery evidence']
+      ]
+    }
+  };
+
+  Object.entries(details).forEach(([key, value]) => Object.assign(modules[key], value, appEvidence[key] || {}));
 })();

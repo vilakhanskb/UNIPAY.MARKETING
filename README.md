@@ -17,7 +17,8 @@ eCapital ແລະ ຄະແນນ/ລາງວັນ ຍັງບໍ່ຖື�
 
 - ໃຊ້ Noto Sans Lao ຜ່ານ Google Fonts
 - ຮອງຮັບ Desktop, Tablet ແລະ Mobile
-- ໃຊ້ພາບ UI ຈາກ UniPay Development Portal ຈິງ; ບໍ່ໃຊ້ UI mockup
+- ໃຊ້ພາບ UI ຈາກ UniPay+ APK ແລະ Development Portal ຈິງ; ບໍ່ໃຊ້ UI mockup
+- ອະທິບາຍ Workflow ຈາກ Mobile App ໄປຫາ Backoffice ຕາມແຕ່ລະໂມດູນ
 - ຈັດເນື້ອຫາແບບ Pitch: ບັນຫາ, ຄຸນຄ່າ, ຄວາມສາມາດ, Workflow, ຜູ້ໃຊ້ເປົ້າໝາຍ ແລະຜົນລັບ
 - ບໍ່ມີ Credential, Token, Password ຫຼືລາຍຊື່ລູກຄ້າໃນ Repo
 - ບໍ່ຕ້ອງ Build; GitHub Pages ສາມາດອ່ານຈາກ Repo ໄດ້ໂດຍກົງ
@@ -43,6 +44,7 @@ Workflow ຢູ່ `.github/workflows/pages.yml`. ເມື່ອ Push ເຂົ
 ├── index.html
 ├── assets/
 │   ├── css/styles.css
+│   ├── images/app/
 │   ├── images/portal/
 │   └── js/
 │       ├── site.js
@@ -61,4 +63,4 @@ Workflow ຢູ່ `.github/workflows/pages.yml`. ເມື່ອ Push ເຂົ
 
 ## Content safety
 
-ພາບ Screenshot ໃນ `assets/images/portal/` ມາຈາກ Development Portal ແລະອາດສະແດງຄ່າສະຫຼຸບ, ວັນທີ, Merchant ID ຫຼືຊື່ Service ຕາມສະຖານະໃນເວລາບັນທຶກ. ທຸກຄັ້ງກ່ອນ Deploy ຄວນກວດວ່າບໍ່ມີ Credential, Token, Password, ລາຍຊື່ລູກຄ້າ ຫຼືຂໍ້ມູນສ່ວນບຸກຄົນ.
+ພາບ Screenshot ໃນ `assets/images/app/` ແລະ `assets/images/portal/` ມາຈາກ Development build/Portal ແລະອາດສະແດງຄ່າສະຫຼຸບ, ວັນທີ, ຂໍ້ມູນ Catalog ຫຼືຊື່ Service ຕາມສະຖານະໃນເວລາບັນທຶກ. ທຸກຄັ້ງກ່ອນ Deploy ຄວນກວດວ່າບໍ່ມີ Credential, Token, Password, ລາຍຊື່ລູກຄ້າ, QR ບັນຊີ ຫຼືຂໍ້ມູນສ່ວນບຸກຄົນ.

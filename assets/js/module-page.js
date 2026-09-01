@@ -13,8 +13,16 @@
   document.title = `${data.label} — UniPay Platform`;
 
   const list = (items, renderer) => (items || []).map(renderer).join('');
-  const imagePath = (src) => `../../assets/images/portal/${src}`;
+  const imagePath = (src, scope = 'portal') => `../../assets/images/${scope}/${src}`;
   const heroShot = data.screenshots?.[0];
+  const appEvidenceSection = (data.appScreenshots?.length || data.workflowMap?.length) ? `
+    <section class="app-evidence-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span></span>App → Backoffice</p><h2>Workflow ທີ່ເຊື່ອມການໃຊ້ງານຈິງ<br />ກັບການຄວບຄຸມຫຼັງບ້ານ</h2></div><p>ສິ່ງທີ່ຜູ້ໃຊ້ເຮັດໃນ UniPay+ ຖືກສົ່ງຕໍ່ເປັນຂໍ້ມູນ, ສະຖານະ ແລະຫຼັກຖານໃນ Backoffice.</p></div>
+        ${data.appScreenshots?.length ? `<div class="module-app-gallery">${list(data.appScreenshots, (shot, index) => `<figure class="app-phone reveal delay-${index % 3}"><a class="phone-screen" href="${imagePath(shot.src, 'app')}" target="_blank" rel="noreferrer"><img src="${imagePath(shot.src, 'app')}" alt="UI ຈິງໃນແອັບ: ${shot.title}" width="1080" height="2400" loading="lazy" /></a><figcaption><span>APP UI 0${index + 1}</span><h3>${shot.title}</h3><p>${shot.caption}</p></figcaption></figure>`)}</div>` : ''}
+        <div class="module-workflow-map reveal"><div class="workflow-head"><span>Mobile App</span><span>Backoffice Portal</span></div>${list(data.workflowMap, (item) => `<article><strong>${item[0]}</strong><i>→</i><p>${item[1]}</p></article>`)}</div>
+      </div>
+    </section>` : '';
 
   root.innerHTML = `
     <section class="module-hero">
@@ -34,6 +42,8 @@
     </section>
 
     <section class="module-proof"><div class="container proof-strip reveal"><span>UI ຈິງ · ${data.label}</span><p>${data.proof}</p></div></section>
+
+    ${appEvidenceSection}
 
     <section class="module-intro"><div class="container intro-grid"><div class="reveal"><p class="eyebrow"><span></span>Business value</p><h2>${data.introTitle}</h2><p>${data.intro}</p></div><div class="benefit-list">${list(data.benefits, (item, index) => `<article class="reveal delay-${Math.min(index, 2)}"><span>${item[0]}</span><div><h3>${item[1]}</h3><p>${item[2]}</p></div></article>`)}</div></div></section>
 
