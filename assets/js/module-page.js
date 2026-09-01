@@ -27,7 +27,7 @@
     <section class="role-section">
       <div class="container">
         <div class="section-heading reveal"><div><p class="eyebrow light"><span></span>Role-based MiniApp</p><h2>MiniApp ດຽວ<br />3 ບົດບາດການເຮັດວຽກ</h2></div><p>ຜູ້ໃຊ້ເລືອກຮ້ານ ແລະສາຂາກ່ອນເຂົ້າ UniPOS. ເມນູ ແລະຂອບເຂດຂໍ້ມູນຈະຖືກກຳນົດຕາມ Role ທີ່ໄດ້ຮັບມອບໝາຍ.</p></div>
-        <div class="role-grid">${list(data.roleWorkflows, (role, index) => `<article class="role-card reveal delay-${index}"><div class="role-card-head"><span>0${index + 1}</span><b>${role.code}</b></div><h3>${role.label}</h3><p class="role-pitch">${role.pitch}</p><p class="role-scope">${role.scope}</p><ol>${list(role.steps, (step) => `<li>${step}</li>`)}</ol></article>`)}</div>
+        <div class="role-grid">${list(data.roleWorkflows, (role, index) => `<article class="role-card reveal delay-${index}"><div class="role-card-head"><span>0${index + 1}</span><b>${role.code}</b></div><h3>${role.label}</h3>${role.image ? `<figure class="role-ui"><a href="${imagePath(role.image, 'app')}" target="_blank" rel="noreferrer"><img src="${imagePath(role.image, 'app')}" alt="UI ຈິງຂອງ UniPOS ສຳລັບ ${role.label}" width="1080" height="2400" loading="lazy" /></a><figcaption><span>REAL APP UI</span><p>${role.evidence}</p></figcaption></figure>` : ''}<p class="role-pitch">${role.pitch}</p><p class="role-scope">${role.scope}</p><ol>${list(role.steps, (step) => `<li>${step}</li>`)}</ol></article>`)}</div>
         <div class="role-control-note reveal"><span>ຫຼັກການຄວບຄຸມ</span><p>ບັນຊີດຽວສາມາດມີຫຼາຍຮ້ານ ຫຼືຫຼາຍບົດບາດໄດ້; ສິດຈະຖືກຜູກກັບ Merchant, ສາຂາ ແລະ Role ເພື່ອໃຫ້ເຫັນສະເພາະງານທີ່ຮັບຜິດຊອບ.</p></div>
       </div>
     </section>` : '';

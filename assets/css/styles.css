@@ -316,7 +316,14 @@ img, svg { display: block; max-width: 100%; }
 .role-card-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .role-card-head > span { color: #7ce6dc; font-size: .7rem; font-weight: 800; }
 .role-card-head b { padding: 7px 11px; border: 1px solid rgba(124,230,220,.28); border-radius: 999px; color: #7ce6dc; background: rgba(124,230,220,.08); font-size: .66rem; letter-spacing: .08em; }
-.role-card h3 { margin: 38px 0 10px; color: #fff; font-size: 1.2rem; }
+.role-card h3 { margin: 38px 0 0; color: #fff; font-size: 1.2rem; }
+.role-ui { margin: 22px 0; overflow: hidden; border: 1px solid rgba(255,255,255,.14); border-radius: 20px; background: #fff; }
+.role-ui a { display: block; overflow: hidden; aspect-ratio: 9 / 14; background: #eaf0ef; }
+.role-ui img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; transition: transform .4s ease; }
+.role-ui:hover img { transform: scale(1.015); }
+.role-ui figcaption { padding: 15px 16px 17px; border-top: 1px solid var(--line); background: #fff; }
+.role-ui figcaption span { color: var(--module-color, var(--mint-dark)); font-size: .62rem; font-weight: 800; letter-spacing: .06em; }
+.role-ui figcaption p { margin: 6px 0 0; color: var(--muted); font-size: .74rem; }
 .role-pitch { min-height: 76px; margin: 0; color: #d8e5e6; font-size: .88rem; }
 .role-scope { margin: 20px 0; color: #9fb8bb; font-size: .8rem; }
 .role-card ol { margin: auto 0 0; padding: 0; list-style: none; counter-reset: role-steps; }
@@ -380,6 +387,7 @@ img, svg { display: block; max-width: 100%; }
   .module-window, .hero-ui { max-width: 720px; margin: 0 auto; transform: none; }
   .capability-groups { grid-template-columns: 1fr; }
   .role-grid { grid-template-columns: 1fr; }
+  .role-ui { width: min(100%, 420px); margin-inline: auto; }
   .capability-group h3 { min-height: 0; }
   .app-phone-gallery { grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .app-phone { padding: 12px; border-radius: 22px; }
