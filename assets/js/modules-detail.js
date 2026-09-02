@@ -55,8 +55,8 @@
       outcomes: ['KYC ແລະ Wallet ເຊື່ອມໃນບໍລິບົດດຽວ', 'Support ຄົ້ນສາເຫດໄດ້ໄວຂຶ້ນ', 'Money movement ກວດຄືນໄດ້', 'Operations ແລະ Audit ໃຊ້ຫຼັກຖານຊຸດດຽວ']
     },
     payments: {
-      proof: 'Payment Platform Health ປ່ຽນສັນຍານຈາກ API, Webhook ແລະ Dependency ໃຫ້ກາຍເປັນສະຖານະທີ່ທີມງານອ່ານໄດ້ທັນທີ.',
-      screenshots: [{ src: 'payments-health.png', title: 'ສຸຂະພາບແພລັດຟອມການຊຳລະ', caption: 'ກວດ API, Webhook, Dependency, ເວີຊັນ, Uptime ແລະລາຍການທີ່ຕ້ອງຮັບມື.' }],
+      proof: 'ຄິວວຽກທຸລະກຳການຊຳລະຊ່ວຍໃຫ້ທີມ Operations ຄົ້ນຫາ, ກອງຕາມສະຖານະ ແລະກວດຕິດຕາມ Transaction ໄດ້ຈາກໜ້າວຽກດຽວ.',
+      screenshots: [{ src: 'payments-transaction-queue.jpg', title: 'ຄິວວຽກທຸລະກຳການຊຳລະ', caption: 'ເຫັນຈຳນວນທຸລະກຳ, ຍອດເງິນ, ສະຖານະ Pending, Paid, Failed ແລະລາຍການຜິດປົກກະຕິ ພ້ອມການຄົ້ນຫາ ແລະຕົວກອງ.' }],
       problems: [['Transaction ກັບ Settlement ຂາດຈຸດເຊື່ອມ', 'ການຮັບເງິນສຳເລັດບໍ່ໄດ້ໝາຍຄວາມວ່າການສະຫຼຸບຍອດສຳເລັດ.'], ['Webhook ລົ້ມເຫຼວແລ້ວຮູ້ຊ້າ', 'Partner ອາດບໍ່ໄດ້ຮັບສະຖານະເຖິງແມ່ນ Transaction ດຳເນີນແລ້ວ.'], ['ສຸຂະພາບລະບົບບໍ່ມີພາບລວມ', 'API, Dependency ແລະ SLA ຖືກຕິດຕາມແຍກກັນ.']],
       capabilityGroups: [{ title: 'Payment Operations', items: ['Payment Transactions', 'Partners', 'Public key lifecycle', 'Webhook Deliveries', 'Webhook SLA'] }, { title: 'Platform Assurance', items: ['Payment Platform Health', 'Operations Observability', 'Payment Operations Signals', 'Dependency status', 'Runbook context'] }, { title: 'Settlement Control', items: ['Settlement Control Room', 'UniMarket Settlements', 'UniPOS Settlements', 'Partner Settlements', 'Exception review'] }],
       audiences: [['Payment Operations', 'ຕິດຕາມ Transaction, Partner ແລະ Webhook.'], ['Finance', 'ກວດ Settlement ແລະລາຍການທີ່ຕ້ອງຄືນດີ.'], ['Technical Support', 'ເຫັນ Health, Dependency ແລະສັນຍານຜິດປົກກະຕິ.']],
