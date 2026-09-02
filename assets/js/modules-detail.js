@@ -15,9 +15,9 @@
         ['ການຂະຫຍາຍສາຂາເຮັດໃຫ້ຄວບຄຸມຍາກ', 'ບົດບາດພະນັກງານ, ລາຄາ, Catalog ແລະການສະຫຼຸບຍອດບໍ່ເປັນມາດຕະຖານ.']
       ],
       capabilityGroups: [
-        { title: 'ເປີດໃຊ້ງານ ແລະຄວບຄຸມຮ້ານ', items: ['ພາບລວມການຂາຍ', 'ຈັດການຮ້ານຄ້າ', 'ຄຳຂໍບົດບາດ', 'ພະນັກງານ ແລະສິດ', 'Activation Wizard', 'ຈັດການສາຂາ'] },
-        { title: 'ຂາຍ, Catalog ແລະສະຕ໋ອກ', items: ['ອໍເດີ POS', 'ລູກຄ້າ POS', 'Catalog Metadata', 'ສິນຄ້າສູນກາງ', 'ຕົວເລືອກສິນຄ້າ', 'Merchant Assortment', 'ສະຕ໋ອກຮ້ານ', 'ສະຕ໋ອກສາຂາ'] },
-        { title: 'ວິເຄາະ ແລະກຳກັບ', items: ['Reports Center', 'ການຕັ້ງຄ່າອ້າງອີງ', 'Policy Evidence', 'Short Links', 'Batch Operations', 'Exports ແລະຫຼັກຖານ'] }
+        { title: 'ຮ້ານ, ບົດບາດ ແລະອໍເດີ', items: ['ພາບລວມ', 'ຮ້ານຄ້າ', 'ຄຳຂໍສິດບົດບາດ', 'ພະນັກງານ ແລະ ສິດເຂົ້າໃຊ້', 'ອໍເດີ POS', 'ລູກຄ້າ POS'] },
+        { title: 'Catalog, ສາຂາ ແລະສະຕັອກ', items: ['ແຄັດຕາລັອກ · ຂໍ້ມູນອ້າງອີງ', 'ແຄັດຕາລັອກ · ສິນຄ້າກາງ', 'ແຄັດຕາລັອກ · ສິນຄ້າຂອງຮ້ານ', 'ຈັດການສາຂາ', 'ສະຕັອກຮ້ານ', 'ສະຕັອກສາຂາ'] },
+        { title: 'ຫຼັກຖານ, ຂໍ້ມູນ ແລະລາຍງານ', items: ['ຫຼັກຖານນະໂຍບາຍ ແລະ ລິ້ງສັ້ນ', 'ຊຸດຂໍ້ມູນ ແລະ ການສົ່ງອອກ', 'ສູນລາຍງານ'] }
       ],
       audiences: [['ເຈົ້າຂອງຮ້ານ', 'ເຫັນຍອດຂາຍ, ກຳໄລ ແລະສິນຄ້າຂາຍດີ.'], ['ຜູ້ຈັດການສາຂາ', 'ຈັດການ Catalog, ສະຕ໋ອກ, ສາຂາ ແລະຕິດຕາມຄຳສັ່ງຊື້.'], ['ພະນັກງານຂາຍ', 'ຂາຍ ແລະຮັບຊຳລະໄດ້ໄວດ້ວຍ Smartphone.']],
       outcomes: ['ການຂາຍກາຍເປັນຂໍ້ມູນທັນທີ', 'ສະຕ໋ອກຖືກຄວບຄຸມຕາມສາຂາ', 'ຫຼຸດວຽກສະຫຼຸບຍອດຊ້ຳຊ້ອນ', 'ພ້ອມຂະຫຍາຍຈາກ 1 ໄປຫຼາຍສາຂາ']
@@ -31,9 +31,9 @@
         ['ກວດການຮັບສິນຄ້າຍາກ', 'ຈຳນວນທີ່ສັ່ງ, ສົ່ງ, ຮັບຈິງ ແລະເສຍຫາຍຂາດຫຼັກຖານຮ່ວມ.']
       ],
       capabilityGroups: [
-        { title: 'ເຄືອຂ່າຍຮ້ານ ແລະ Catalog', items: ['ພາບລວມ', 'ຮ້ານຄ້າ', 'Activation Wizard', 'Catalog Metadata', 'ສິນຄ້າສູນກາງ', 'Merchant Assortment', 'ສາຂາ', 'Shops ແລະ Slides'] },
-        { title: 'ອໍເດີ ແລະ Fulfilment', items: ['ຈັດການອໍເດີ', 'Reconciliation', 'Auto Cancel', 'Support Diagnostics', 'Merchant Stock', 'Branch Stock', 'Reviews'] },
-        { title: 'ການເຕີບໂຕ ແລະລາຍງານ', items: ['Platform Reports', 'Observability', 'Priority Fees', 'Dealers', 'Salesmen', 'ວິເຄາະຮ້ານ ແລະສິນຄ້າ'] }
+        { title: 'ຮ້ານ, Catalog ແລະສາຂາ', items: ['ພາບລວມ', 'ຮ້ານຄ້າ', 'ແຄັດຕາລັອກ · ຂໍ້ມູນອ້າງອີງ', 'ແຄັດຕາລັອກ · ສິນຄ້າກາງ', 'ແຄັດຕາລັອກ · ສິນຄ້າຂອງຮ້ານ', 'ຈັດການສາຂາ'] },
+        { title: 'ອໍເດີ, ສະຕັອກ ແລະຄຸນນະພາບ', items: ['ອໍເດີ', 'ການກະທົບຍອດ', 'ຍົກເລີກອັດຕະໂນມັດ', 'ການວິນິດໄສສຳລັບຊ່ວຍເຫຼືອ', 'ສະຕັອກຮ້ານ', 'ສະຕັອກສາຂາ', 'ການປະເມີນ'] },
+        { title: 'ການຄ້າ, ເຄືອຂ່າຍ ແລະລາຍງານ', items: ['ໜ້າຮ້ານ', 'ຄ່າທຳນຽມຕາມຄວາມດ່ວນ', 'ຕົວແທນຈຳໜ່າຍ', 'ພະນັກງານຂາຍ', 'ການຕິດຕາມລະບົບ', 'Platform Reports'] }
       ],
       audiences: [['Distributor', 'ຄວບຄຸມ Catalog, ອໍເດີ ແລະການຈັດສົ່ງ.'], ['Dealer / Salesman', 'ເຫັນຮ້ານ, ພື້ນທີ່ ແລະວຽກທີ່ຕ້ອງຕິດຕາມ.'], ['ຮ້ານຄ້າ', 'ສັ່ງສິນຄ້າ ແລະຮັບຮູ້ສະຖານະໄດ້ຊັດເຈນ.']],
       outcomes: ['ອໍເດີທັງໝົດຢູ່ໃນ workflow ດຽວ', 'ລົດຄວາມຄາດເຄື່ອນຂອງ Catalog', 'ຮູ້ສະຖານະ Fulfilment ແລະ Settlement', 'ຂະຫຍາຍເຄືອຂ່າຍ Dealer ໄດ້ມີລະບົບ']
@@ -41,8 +41,8 @@
     users: {
       proof: 'ໜ້າສະຫຼຸບສິດ ແລະເນື້ອຫາຊ່ວຍໃຫ້ Admin ເຫັນບັນຊີ, ຂອບເຂດສິດ ແລະລາຍການທີ່ຕ້ອງກວດ.',
       screenshots: [{ src: 'users-overview.png', title: 'ການດຳເນີນງານເນື້ອຫາ ແລະສິດ', caption: 'ສະຫຼຸບ Lifecycle ຂອງເນື້ອຫາ, ຜູ້ໃຊ້, ຂອບເຂດສິດ ແລະສັນຍານ Access reconciliation.' }],
-      problems: [['ສິດຫຼາຍເກີນໜ້າວຽກ', 'ຜູ້ໃຊ້ອາດເຫັນ ຫຼືດຳເນີນການເກີນຂອບເຂດທີ່ຮັບຜິດຊອບ.'], ['ບັນຊີ ແລະຂອບເຂດບໍ່ກົງກັນ', 'ການປ່ຽນຕຳແໜ່ງ ຫຼືສາຂາອາດປ່ອຍສິດເກົ່າຄ້າງໄວ້.'], ['ເນື້ອຫາບໍ່ມີ Lifecycle', 'Banner, Blog ແລະ Shortcut ຂາດຂັ້ນຕອນຮ່າງ, ກວດ ແລະເຜີຍແຜ່.']],
-      capabilityGroups: [{ title: 'Content Operations', items: ['Banners', 'Blog Posts', 'Comments', 'Shortcuts', 'Draft / Schedule / Publish', 'Revision tracking'] }, { title: 'Identity & Access', items: ['Access Management', 'ບົດບາດ', 'Merchant scope', 'Approval workflow', 'Access reconciliation', 'ຖອນສິດ'] }, { title: 'Governance', items: ['Audit trail', 'ລາຍການຕ້ອງກວດ', 'Least privilege', 'ຫຼັກຖານການອະນຸມັດ'] }],
+      problems: [['ສິດຫຼາຍເກີນໜ້າວຽກ', 'ຜູ້ໃຊ້ອາດເຫັນ ຫຼືດຳເນີນການເກີນຂອບເຂດທີ່ຮັບຜິດຊອບ.'], ['ບັນຊີ ແລະຂອບເຂດບໍ່ກົງກັນ', 'ການປ່ຽນຕຳແໜ່ງ ຫຼືສາຂາອາດປ່ອຍສິດເກົ່າຄ້າງໄວ້.'], ['ເນື້ອຫາບໍ່ມີ Lifecycle', 'ບົດຄວາມ ແລະຄຳເຫັນຂາດຂັ້ນຕອນຮ່າງ, ກວດ ແລະເຜີຍແຜ່.']],
+      capabilityGroups: [{ title: 'ສະຫຼຸບການດຳເນີນງານ', items: ['ພາບລວມ'] }, { title: 'ຈັດການເນື້ອຫາ', items: ['ບົດຄວາມ', 'ຄຳເຫັນ'] }, { title: 'ສິດ ແລະຂອບເຂດ', items: ['ຈັດການສິດເຂົ້າໃຊ້'] }],
       audiences: [['System Admin', 'ກຳນົດບົດບາດ ແລະກວດຄວາມສອດຄ່ອງ.'], ['Content Team', 'ຈັດການເນື້ອຫາຕາມ Lifecycle ທີ່ຊັດເຈນ.'], ['Auditor', 'ກວດຜູ້ດຳເນີນການ, ເວລາ ແລະການປ່ຽນແປງ.']],
       outcomes: ['ສິດກົງກັບໜ້າວຽກ', 'ເນື້ອຫາມີຂັ້ນຕອນກວດກ່ອນເຜີຍແຜ່', 'ກວດຄືນການປ່ຽນແປງໄດ້', 'ຫຼຸດຄວາມສ່ຽງຈາກບັນຊີ ແລະສິດຄ້າງ']
     },
@@ -50,7 +50,7 @@
       proof: 'Wallet Overview ສະແດງຍອດຄົງເຫຼືອ, ການເຄື່ອນໄຫວ, ເຫດການຜິດປົກກະຕິ ແລະຮອບການກວດສອບ.',
       screenshots: [{ src: 'wallet-overview.png', title: 'ພາບລວມ Wallet', caption: 'ສະຫຼຸບ Balance, ການໄຫຼເຂົ້າ-ອອກ, ຈຳນວນທຸລະກຳ ແລະສັນຍານສຳລັບການກວດສອບ.' }],
       problems: [['ການກວດ KYC ແຍກຈາກບັນຊີ', 'ທີມງານຕ້ອງສະຫຼັບຫຼາຍລະບົບເພື່ອເຫັນຕົວຕົນ ແລະສະຖານະ Wallet.'], ['ຄົ້ນຫາສາເຫດທຸລະກຳຊ້າ', 'Transaction, Counterparty ແລະ Ledger ບໍ່ມີບໍລິບົດຮ່ວມ.'], ['ການສະຫຼຸບຍອດຂາດຫຼັກຖານ', 'ຝ່າຍ Support, Operations ແລະ Audit ເຫັນຂໍ້ມູນຄົນລະຊຸດ.']],
-      capabilityGroups: [{ title: 'Customer & KYC', items: ['Wallet Overview', 'KYC Review', 'Customer Investigation', 'Profile context', 'Counterparty context'] }, { title: 'Money Movement', items: ['Transactions', 'Wallet Balance', 'Latest Transfers', 'Income Summary', 'Expense Summary'] }, { title: 'Control & Evidence', items: ['Affiliate Settings', 'Wallet Audit', 'ເຫດການຜິດປົກກະຕິ', 'Ledger evidence', 'ການກັ່ນຕອງຕາມຊ່ວງເວລາ'] }],
+      capabilityGroups: [{ title: 'ລູກຄ້າ ແລະ KYC', items: ['ພາບລວມ', 'ການກວດສອບ KYC', 'ການກວດສອບລູກຄ້າ'] }, { title: 'ທຸລະກຳ ແລະການຕັ້ງຄ່າ', items: ['ທຸລະກຳ', 'ການຕັ້ງຄ່າຜູ້ແນະນຳ'] }, { title: 'ລາຍງານ ແລະຫຼັກຖານ', items: ['ຍອດ Wallet', 'ສະຫຼຸບລາຍຈ່າຍ', 'ສະຫຼຸບລາຍຮັບ', 'ປະຫວັດກວດສອບ Wallet'] }],
       audiences: [['KYC Operations', 'ກວດຫຼັກຖານ ແລະບັນທຶກຜົນການຕັດສິນໃຈ.'], ['Customer Support', 'ເຫັນບໍລິບົດລູກຄ້າ ແລະທຸລະກຳໃນຈຸດດຽວ.'], ['Finance / Audit', 'ກວດ Balance, Ledger, Income ແລະ Expense.']],
       outcomes: ['KYC ແລະ Wallet ເຊື່ອມໃນບໍລິບົດດຽວ', 'Support ຄົ້ນສາເຫດໄດ້ໄວຂຶ້ນ', 'Money movement ກວດຄືນໄດ້', 'Operations ແລະ Audit ໃຊ້ຫຼັກຖານຊຸດດຽວ']
     },
@@ -58,7 +58,7 @@
       proof: 'ຄິວວຽກທຸລະກຳການຊຳລະຊ່ວຍໃຫ້ທີມ Operations ຄົ້ນຫາ, ກອງຕາມສະຖານະ ແລະກວດຕິດຕາມ Transaction ໄດ້ຈາກໜ້າວຽກດຽວ.',
       screenshots: [{ src: 'payments-transaction-queue.jpg', title: 'ຄິວວຽກທຸລະກຳການຊຳລະ', caption: 'ເຫັນຈຳນວນທຸລະກຳ, ຍອດເງິນ, ສະຖານະ Pending, Paid, Failed ແລະລາຍການຜິດປົກກະຕິ ພ້ອມການຄົ້ນຫາ ແລະຕົວກອງ.' }],
       problems: [['Transaction ກັບ Settlement ຂາດຈຸດເຊື່ອມ', 'ການຮັບເງິນສຳເລັດບໍ່ໄດ້ໝາຍຄວາມວ່າການສະຫຼຸບຍອດສຳເລັດ.'], ['Webhook ລົ້ມເຫຼວແລ້ວຮູ້ຊ້າ', 'Partner ອາດບໍ່ໄດ້ຮັບສະຖານະເຖິງແມ່ນ Transaction ດຳເນີນແລ້ວ.'], ['ສຸຂະພາບລະບົບບໍ່ມີພາບລວມ', 'API, Dependency ແລະ SLA ຖືກຕິດຕາມແຍກກັນ.']],
-      capabilityGroups: [{ title: 'Payment Operations', items: ['Payment Transactions', 'Partners', 'Public key lifecycle', 'Webhook Deliveries', 'Webhook SLA'] }, { title: 'Platform Assurance', items: ['Payment Platform Health', 'Operations Observability', 'Payment Operations Signals', 'Dependency status', 'Runbook context'] }, { title: 'Settlement Control', items: ['Settlement Control Room', 'UniMarket Settlements', 'UniPOS Settlements', 'Partner Settlements', 'Exception review'] }],
+      capabilityGroups: [{ title: 'ການດຳເນີນງານການຊຳລະ', items: ['ທຸລະກຳການຊຳລະ', 'ຄູ່ຮ່ວມງານ', 'ການສົ່ງ Webhook', 'ສຸຂະພາບແພລດຟອມການຊຳລະ', 'ຫ້ອງຄວບຄຸມການຊຳລະບັນຊີ'] }, { title: 'ສັນຍານ ແລະ SLA', items: ['SLA ຂອງ Webhook', 'ສັນຍານການດຳເນີນງານການຊຳລະ'] }, { title: 'ລາຍງານ Settlement', items: ['ການຊຳລະບັນຊີ UniMarket', 'ການຊຳລະບັນຊີ UniPOS', 'ການຊຳລະບັນຊີຄູ່ຮ່ວມງານ'] }],
       audiences: [['Payment Operations', 'ຕິດຕາມ Transaction, Partner ແລະ Webhook.'], ['Finance', 'ກວດ Settlement ແລະລາຍການທີ່ຕ້ອງຄືນດີ.'], ['Technical Support', 'ເຫັນ Health, Dependency ແລະສັນຍານຜິດປົກກະຕິ.']],
       outcomes: ['ເຫັນເງິນຢູ່ຂັ້ນຕອນໃດ', 'Webhook failure ມີຫຼັກຖານຕິດຕາມ', 'Settlement ແຍກຕາມຜະລິດຕະພັນ ແລະ Partner', 'ທີມທຸລະກິດ ແລະເຕັກນິກເຫັນພາບດຽວກັນ']
     },
@@ -66,7 +66,7 @@
       proof: 'Dependency Status ສະແດງຄວາມພ້ອມ, ຄຳເຕືອນ, Critical service ແລະເວລາຕອບສະໜອງໃນຈຸດດຽວ.',
       screenshots: [{ src: 'system-dependencies.png', title: 'ສະຖານະ Dependency ຂອງ POS', caption: 'ເຫັນສະຖານະຂອງ Integration, Storage, Payment, Database ແລະ Cache ພ້ອມ latency.' }],
       problems: [['ຮູ້ບັນຫາເມື່ອລູກຄ້າແຈ້ງ', 'ທີມງານຂາດພາບລວມຂອງ API, Dependency ແລະ Background jobs.'], ['ການແກ້ໄຂພຶ່ງພາຄົນ', 'ສັນຍານ, Owner ແລະ Runbook ບໍ່ໄດ້ຢູ່ໃນ workflow ຮ່ວມ.'], ['ກວດຄືນ Incident ຍາກ', 'Event, Job result ແລະການດຳເນີນການຂາດ timeline ດຽວ.']],
-      capabilityGroups: [{ title: 'Health & Observability', items: ['System Overview', 'POS Dependency Status', 'POS Observability', 'Wallet Watch', 'Socket Monitor', 'Socket API Inventory'] }, { title: 'Jobs & Automation', items: ['WebJob Monitor', 'WebJob Schedules', 'WebJob Operations', 'WebJob Payments', 'WebJob Auto Cancel', 'Read Access'] }, { title: 'Events & Configuration', items: ['LDB Callback Investigation', 'Event Publisher', 'Activation Wizard', 'UI Guide', 'Withdraw Types', 'Deposit Types', 'Transfer Types'] }],
+      capabilityGroups: [{ title: 'Jobs ແລະການຄວບຄຸມ', items: ['ພາບລວມ', 'WebJob Schedules', 'WebJob Operations', 'Wallet Watch', 'WebJob Payments', 'WebJob Auto Cancel'] }, { title: 'Realtime ແລະ Events', items: ['ຕິດຕາມ Socket', 'ສົ່ງ Event', 'ລາຍການ Socket API'] }, { title: 'ການຕິດຕາມ ແລະຂໍ້ມູນອ້າງອີງ', items: ['ສະຖານະ Dependency ຂອງ POS', 'ການຕິດຕາມ POS', 'WebJob Monitor', 'LDB Callback Investigation', 'ປະເພດຖອນເງິນ', 'ປະເພດຝາກເງິນ', 'ປະເພດໂອນເງິນ'] }],
       audiences: [['Operations Center', 'ເຝົ້າລະວັງ Health, Jobs ແລະ Realtime.'], ['Engineering Support', 'ລະບຸ Dependency, latency ແລະຫຼັກຖານສຳລັບແກ້ໄຂ.'], ['Service Owner', 'ຮັບຮູ້ຜົນກະທົບ ແລະຢືນຢັນການຟື້ນຟູ.']],
       outcomes: ['ພົບສັນຍານກ່ອນກະທົບກວ້າງ', 'ລະບຸ Service ແລະ Owner ໄດ້ຊັດ', 'ການແກ້ໄຂອີງຕາມ Runbook', 'Incident ມີ timeline ແລະຫຼັກຖານກວດຄືນ']
     }
@@ -129,7 +129,7 @@
         ['Login ດ້ວຍ Email/Phone', 'ກວດບັນຊີ, Session ແລະສະຖານະການເຂົ້າໃຊ້'],
         ['Login ດ້ວຍ Biometric', 'ຜູກກັບ Session ທີ່ອະນຸຍາດໃນອຸປະກອນ'],
         ['ເປີດ MiniApp', 'Role, Merchant scope, Branch scope ແລະ Permission'],
-        ['ເຫັນ Banner/Shortcut/ຂ່າວ', 'Content lifecycle, Schedule, Publish ແລະ Audit']
+        ['ເຫັນບົດຄວາມ ແລະເນື້ອຫາ', 'Article lifecycle, Comment governance, Schedule, Publish ແລະ Audit']
       ]
     },
     wallet: {
