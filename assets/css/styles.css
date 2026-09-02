@@ -36,11 +36,8 @@ img, svg { display: block; max-width: 100%; }
 .brand > span:last-child { display: flex; flex-direction: column; line-height: 1.05; }
 .brand strong { font-size: 1.15rem; letter-spacing: -.02em; }
 .brand small { color: var(--muted); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; }
-.brand-mark { width: 40px; height: 40px; display: inline-flex; align-items: flex-end; justify-content: center; gap: 3px; padding: 9px; border-radius: 13px; background: var(--ink); box-shadow: 0 8px 20px rgba(7, 52, 58, .18); }
-.brand-mark i { width: 5px; border-radius: 5px; background: var(--mint); transform: rotate(28deg); }
-.brand-mark i:nth-child(1) { height: 13px; }
-.brand-mark i:nth-child(2) { height: 20px; }
-.brand-mark i:nth-child(3) { height: 15px; }
+.brand-mark { width: 48px; height: 34px; display: inline-flex; flex: 0 0 auto; background: url("../unipay-brand.png") center / contain no-repeat; filter: drop-shadow(0 7px 12px rgba(7, 52, 58, .12)); }
+.brand-mark i { display: none; }
 .site-nav { display: flex; align-items: center; gap: 32px; color: var(--ink-2); font-size: .92rem; font-weight: 600; }
 .site-nav > a:not(.nav-cta) { position: relative; }
 .site-nav > a:not(.nav-cta)::after { content: ""; position: absolute; inset: auto 0 -5px; height: 2px; background: var(--mint); transform: scaleX(0); transform-origin: left; transition: transform .2s; }
@@ -198,7 +195,7 @@ img, svg { display: block; max-width: 100%; }
 .ecosystem-map { position: relative; max-width: 900px; height: 560px; margin: 40px auto 0; }
 .ecosystem-map::before { content: ""; position: absolute; width: 390px; height: 390px; left: 50%; top: 50%; border: 1px dashed #bddad6; border-radius: 50%; transform: translate(-50%,-50%); }
 .eco-core { position: absolute; width: 180px; height: 180px; left: 50%; top: 50%; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; color: #fff; background: var(--ink); box-shadow: 0 25px 60px rgba(7,52,58,.25); transform: translate(-50%,-50%); }
-.eco-core .brand-mark { margin-bottom: 10px; background: rgba(255,255,255,.1); }
+.eco-core .brand-mark { margin-bottom: 10px; }
 .eco-core strong { font-size: 1.25rem; }
 .eco-core small { color: #a9c2c5; font-size: .55rem; letter-spacing: .08em; }
 .eco-node { position: absolute; width: 135px; min-height: 78px; z-index: 3; padding: 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: var(--shadow-sm); transition: transform .2s, border-color .2s; }
@@ -217,7 +214,7 @@ img, svg { display: block; max-width: 100%; }
 .site-footer { padding: 70px 0 24px; color: #c3d3d5; background: #06252a; }
 .footer-grid { display: grid; grid-template-columns: 1.6fr .7fr .8fr; gap: 70px; }
 .footer-brand { color: #fff; }
-.footer-brand .brand-mark { background: rgba(255,255,255,.08); }
+.footer-brand .brand-mark { filter: drop-shadow(0 7px 12px rgba(0, 0, 0, .2)); }
 .footer-grid > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .footer-grid p { max-width: 350px; color: #89a7ab; font-size: .85rem; }
 .footer-grid > div > strong { margin-bottom: 8px; color: #fff; font-size: .82rem; }
