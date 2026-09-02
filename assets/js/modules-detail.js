@@ -36,7 +36,7 @@
         { title: 'ການຄ້າ, ເຄືອຂ່າຍ ແລະລາຍງານ', items: ['ໜ້າຮ້ານ', 'ຄ່າທຳນຽມຕາມຄວາມດ່ວນ', 'ຕົວແທນຈຳໜ່າຍ', 'ພະນັກງານຂາຍ', 'ການຕິດຕາມລະບົບ', 'Platform Reports'] }
       ],
       audiences: [['Distributor', 'ຈັດການ Catalog, Order ແລະການຈັດສົ່ງ.'], ['Dealer / Salesman', 'ເຫັນຮ້ານ, ເຂດຮັບຜິດຊອບ ແລະວຽກທີ່ຕ້ອງຕິດຕາມ.'], ['ຮ້ານຄ້າ', 'ສັ່ງສິນຄ້າ ແລະຕິດຕາມສະຖານະໄດ້ຢ່າງຊັດເຈນ.']],
-      outcomes: ['Order ທັງໝົດຢູ່ໃນ Workflow ດຽວ', 'ຫຼຸດຄວາມຄາດເຄື່ອນຂອງຂໍ້ມູນ Catalog', 'ຕິດຕາມສະຖານະ Fulfilment ແລະ Settlement ໄດ້', 'ຂະຫຍາຍເຄືອຂ່າຍ Dealer ໄດ້ຢ່າງເປັນລະບົບ']
+      outcomes: ['Order ທັງໝົດຢູ່ໃນ Workflow ດຽວ', 'ຫຼຸດຄວາມຄາດເຄື່ອນຂອງຂໍ້ມູນ Catalog', 'ຕິດຕາມສະຖານະ Fulfilment ແລະການໄລ່ລຽງໄດ້', 'ຂະຫຍາຍເຄືອຂ່າຍ Dealer ໄດ້ຢ່າງເປັນລະບົບ']
     },
     users: {
       proof: 'ໜ້າ Overview ຊ່ວຍໃຫ້ Admin ເຫັນຈຳນວນບັນຊີ, ຂອບເຂດສິດ, ສະຖານະເນື້ອຫາ ແລະລາຍການທີ່ຕ້ອງກວດ.',
@@ -57,10 +57,10 @@
     payments: {
       proof: 'ໜ້າ Transaction Queue ຊ່ວຍໃຫ້ທີມ Operations ຄົ້ນຫາ, ກອງຕາມສະຖານະ ແລະຕິດຕາມ Transaction ໄດ້ຈາກໜ້າດຽວ.',
       screenshots: [{ src: 'payments-transaction-queue.jpg', title: 'Transaction Queue ຂອງລະບົບຊຳລະ', caption: 'ເຫັນຈຳນວນ Transaction, ຍອດເງິນ, ສະຖານະ Pending, Paid ແລະ Failed ພ້ອມຊ່ອງຄົ້ນຫາ ແລະຕົວກອງ.' }],
-      problems: [['Transaction ແລະ Settlement ບໍ່ເຊື່ອມກັນ', 'ການຮັບເງິນສຳເລັດ ບໍ່ໄດ້ໝາຍຄວາມວ່າ Settlement ສຳເລັດແລ້ວ.'], ['ຮູ້ຊ້າເມື່ອ Webhook ສົ່ງບໍ່ສຳເລັດ', 'Partner ອາດບໍ່ໄດ້ຮັບສະຖານະ ເຖິງແມ່ນວ່າ Transaction ຖືກດຳເນີນການແລ້ວ.'], ['ຂາດໜ້າລວມສຳລັບຕິດຕາມລະບົບ', 'API, Dependency ແລະ SLA ຖືກຕິດຕາມແຍກກັນ ເຮັດໃຫ້ກວດບັນຫາໄດ້ຊ້າ.']],
-      capabilityGroups: [{ title: 'Payment Operations', items: ['ທຸລະກຳການຊຳລະ', 'ຄູ່ຮ່ວມງານ', 'ການສົ່ງ Webhook', 'Payment Platform Health', 'Settlement Control Room'] }, { title: 'ສັນຍານ ແລະ SLA', items: ['SLA ຂອງ Webhook', 'ສັນຍານການດຳເນີນງານການຊຳລະ'] }, { title: 'ລາຍງານ Settlement', items: ['Settlement ຂອງ UniMarket', 'Settlement ຂອງ UniPOS', 'Settlement ຂອງ Partner'] }],
-      audiences: [['Payment Operations', 'ຕິດຕາມ Transaction, Partner ແລະ Webhook.'], ['Finance', 'ກວດ Settlement ແລະລາຍການທີ່ຕ້ອງກວດຄືນ.'], ['Technical Support', 'ກວດ System Health, Dependency ແລະສັນຍານຜິດປົກກະຕິ.']],
-      outcomes: ['ຮູ້ວ່າເງິນຢູ່ຂັ້ນຕອນໃດ', 'ກວດສາເຫດ Webhook Failure ຈາກ Delivery Log ໄດ້', 'ແຍກ Settlement ຕາມຜະລິດຕະພັນ ແລະ Partner', 'ທີມທຸລະກິດ ແລະທີມເຕັກນິກເຫັນຂໍ້ມູນຊຸດດຽວກັນ']
+      problems: [['Transaction ແລະການໄລ່ລຽງບໍ່ເຊື່ອມກັນ', 'ການຮັບເງິນສຳເລັດ ບໍ່ໄດ້ໝາຍຄວາມວ່າການໄລ່ລຽງສຳເລັດແລ້ວ.'], ['ຮູ້ຊ້າເມື່ອ Webhook ສົ່ງບໍ່ສຳເລັດ', 'Partner ອາດບໍ່ໄດ້ຮັບສະຖານະ ເຖິງແມ່ນວ່າ Transaction ຖືກດຳເນີນການແລ້ວ.'], ['ຂາດໜ້າລວມສຳລັບຕິດຕາມລະບົບ', 'API, Dependency ແລະ SLA ຖືກຕິດຕາມແຍກກັນ ເຮັດໃຫ້ກວດບັນຫາໄດ້ຊ້າ.']],
+      capabilityGroups: [{ title: 'Payment Operations', items: ['ທຸລະກຳການຊຳລະ', 'ຄູ່ຮ່ວມງານ', 'ການສົ່ງ Webhook', 'Payment Platform Health', 'ຫ້ອງຄວບຄຸມການໄລ່ລຽງ'] }, { title: 'ສັນຍານ ແລະ SLA', items: ['SLA ຂອງ Webhook', 'ສັນຍານການດຳເນີນງານການຊຳລະ'] }, { title: 'ລາຍງານການໄລ່ລຽງ', items: ['ການໄລ່ລຽງຂອງ UniMarket', 'ການໄລ່ລຽງຂອງ UniPOS', 'ການໄລ່ລຽງຂອງ Partner'] }],
+      audiences: [['Payment Operations', 'ຕິດຕາມ Transaction, Partner ແລະ Webhook.'], ['Finance', 'ກວດການໄລ່ລຽງ ແລະລາຍການທີ່ຕ້ອງກວດຄືນ.'], ['Technical Support', 'ກວດ System Health, Dependency ແລະສັນຍານຜິດປົກກະຕິ.']],
+      outcomes: ['ຮູ້ວ່າເງິນຢູ່ຂັ້ນຕອນໃດ', 'ກວດສາເຫດ Webhook Failure ຈາກ Delivery Log ໄດ້', 'ແຍກການໄລ່ລຽງຕາມຜະລິດຕະພັນ ແລະ Partner', 'ທີມທຸລະກິດ ແລະທີມເຕັກນິກເຫັນຂໍ້ມູນຊຸດດຽວກັນ']
     },
     system: {
       proof: 'ໜ້າ Dependency Status ສະແດງວ່າ Service ໃດພ້ອມໃຊ້ງານ, ມີຄຳເຕືອນ ຫຼືເປັນ Critical Service ພ້ອມ Response Time.',
@@ -107,7 +107,7 @@
       workflowMap: [
         ['ເລືອກຮ້ານ ແລະສາຂາ', 'ກວດ Merchant, ສາຂາ, Role ແລະ Shift'],
         ['ຄົ້ນຫາ/ສະແກນ ແລະເພີ່ມສິນຄ້າ', 'Catalog, Barcode, ລາຄາ ແລະ Stock ຕາມສາຂາ'],
-        ['ຢືນຢັນການຂາຍ ແລະຮັບຊຳລະ', 'Order, Payment reference, Stock movement ແລະ Settlement'],
+        ['ຢືນຢັນການຂາຍ ແລະຮັບຊຳລະ', 'Order, Payment Reference, Stock Movement ແລະການໄລ່ລຽງ'],
         ['ເບິ່ງປະຫວັດ/ສະຫຼຸບ', 'Sales history, Gross profit, Top products ແລະ Reports']
       ]
     },
@@ -146,7 +146,7 @@
         ['ສະແກນ QR ໃນແອັບ', 'ສ້າງ Payment reference ແລະກຳນົດ Partner/Merchant'],
         ['ຢືນຢັນການຊຳລະ', 'Transaction status, Callback ແລະ Webhook delivery'],
         ['ຮັບຜົນສຳເລັດ/ລົ້ມເຫຼວ', 'Operations signal, Retry, Investigation ແລະ SLA'],
-        ['ປິດຮອບ', 'Settlement control, Reconciliation ແລະ Exception review']
+        ['ປິດຮອບ', 'ການຄວບຄຸມການໄລ່ລຽງ, Reconciliation ແລະ Exception Review']
       ]
     },
     system: {
