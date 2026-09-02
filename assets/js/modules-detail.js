@@ -133,10 +133,10 @@
       ]
     },
     wallet: {
-      appScreenshots: [{ src: 'withdraw.png', title: 'ຖອນເງິນຜ່ານ ATM', caption: 'ໜ້າຖອນເງິນຈິງ: ເລືອກປະເພດຖອນ ແລະຄົ້ນຫາຜູ້ຮັບດ້ວຍເລກບັນຊີ, ອີເມວ ຫຼືເບີໂທ.' }],
+      appScreenshots: [{ src: 'topup-laoqr.png', title: 'ຕື່ມເງິນຜ່ານ LaoQR', caption: 'ໜ້າຕື່ມເງິນຈິງ: ກຳນົດຈຳນວນເງິນ, ເຫັນຄ່າທຳນຽມ, ໃສ່ໝາຍເຫດ ແລະກວດຂໍ້ມູນກ່ອນສ້າງ LaoQR.' }],
       workflowMap: [
         ['ສົ່ງຂໍ້ມູນ KYC', 'KYC queue, Review, Decision ແລະ Audit evidence'],
-        ['ຝາກເງິນ', 'Deposit type, Payment callback, Wallet credit ແລະ Ledger'],
+        ['ຕື່ມເງິນຜ່ານ LaoQR', 'LaoQR payment reference, Payment callback, Wallet credit ແລະ Ledger'],
         ['ໂອນເງິນ', 'Recipient validation, Transfer status, Counterparty ແລະ Ledger'],
         ['ຖອນເງິນ', 'Withdraw type, Approval/rule, Wallet debit ແລະ Investigation']
       ]
