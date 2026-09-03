@@ -70,7 +70,7 @@
 
     <section class="audience-section"><div class="container"><div class="feature-heading reveal"><p class="eyebrow"><span></span>ກຸ່ມຜູ້ໃຊ້</p><h2>ໂມດູນນີ້ເໝາະກັບໃຜ</h2></div><div class="audience-grid">${list(data.audiences, (item, index) => `<article class="reveal delay-${index}"><span>${String(index + 1).padStart(2, '0')}</span><h3>${item[0]}</h3><p>${item[1]}</p></article>`)}</div><div class="outcomes-card reveal"><div><p class="eyebrow light"><span></span>ຜົນຮັບຕໍ່ທຸລະກິດ</p><h2>ສິ່ງທີ່ທຸລະກິດຈະໄດ້ຮັບ</h2></div><ul>${list(data.outcomes, (item) => `<li><span>✓</span>${item}</li>`)}</ul></div></div></section>
 
-    <section class="module-cta"><div class="container"><div class="cta-card reveal"><div><p class="eyebrow light"><span></span>${data.label}</p><h2>${data.ctaTitle}</h2><p>ນຳໂມດູນນີ້ເຂົ້າ Pilot ຮ່ວມກັບ Workflow ທີ່ກ່ຽວຂ້ອງ ແລະວັດຜົນດ້ວຍ KPI ກ່ອນຂະຫຍາຍການນຳໃຊ້.</p></div><div class="cta-actions"><a class="button button-light" href="../../#roadmap">ເບິ່ງແຜນ Pilot <span>→</span></a><a class="button button-outline-light" href="../../documents/UniPay_Pitch_Transcript_LO.docx">Transcript</a></div></div></div></section>`;
+    <section class="module-cta"><div class="container"><div class="cta-card reveal"><div><p class="eyebrow light"><span></span>${data.label}</p><h2>${data.ctaTitle}</h2><p>ນຳໂມດູນນີ້ເຂົ້າ Pilot ຮ່ວມກັບ Workflow ທີ່ກ່ຽວຂ້ອງ ແລະວັດຜົນດ້ວຍ KPI ກ່ອນຂະຫຍາຍການນຳໃຊ້.</p></div><div class="cta-actions"><a class="button button-light" href="../../#roadmap">ເບິ່ງແຜນ Pilot <span>→</span></a></div></div></div></section>`;
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, obs) => entries.forEach((entry) => {
