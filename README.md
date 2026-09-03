@@ -11,15 +11,16 @@
 - ລະບົບຮັບຊຳລະ
 - ຈັດການລະບົບ
 
-eCapital ແລະ ຄະແນນ/ລາງວັນ ຍັງບໍ່ຖືກນຳມາສະແດງ ຈົນກວ່າການພັດທະນາຈະພ້ອມ.
+eCapital ແລະ ຄະແນນ/ລາງວັນ ສະແດງສະເພາະໃນສ່ວນ Roadmap ແລະບໍ່ນັບເປັນຄວາມສາມາດປັດຈຸບັນ.
 
 ## ຈຸດເດັ່ນຂອງ Repo
 
 - ໃຊ້ Noto Sans Lao ຜ່ານ Google Fonts
 - ຮອງຮັບ Desktop, Tablet ແລະ Mobile
-- ໃຊ້ພາບ UI ຈາກ UniPay+ APK ແລະ Development Portal ຈິງ; ບໍ່ໃຊ້ UI mockup
+- ໃຊ້ພາບ UI ຈາກ UniPay+ APK ແລະ Backoffice Portal ຈິງ; ບໍ່ໃຊ້ UI mockup
 - ອະທິບາຍ Workflow ຈາກ Mobile App ໄປຫາ Backoffice ຕາມແຕ່ລະໂມດູນ
-- ຈັດເນື້ອຫາແບບ Pitch: ບັນຫາ, ຄຸນຄ່າ, ຄວາມສາມາດ, Workflow, ຜູ້ໃຊ້ເປົ້າໝາຍ ແລະຜົນລັບ
+- ຈັດເນື້ອຫາແບບ Pitch: Executive Summary, ກຸ່ມລູກຄ້າ, KPI, Security, Product Status, Roadmap ແລະ Pilot CTA
+- ມີ Transcript ແລະລຳດັບ Live Demo 15–20 ນາທີເປັນໄຟລ໌ Word
 - ບໍ່ມີ Credential, Token, Password ຫຼືລາຍຊື່ລູກຄ້າໃນ Repo
 - ບໍ່ຕ້ອງ Build; GitHub Pages ສາມາດອ່ານຈາກ Repo ໄດ້ໂດຍກົງ
 
@@ -58,9 +59,11 @@ Workflow ຢູ່ `.github/workflows/pages.yml`. ເມື່ອ Push ເຂົ
 │   ├── wallet/
 │   ├── payments/
 │   └── system/
+├── documents/UniPay_Pitch_Transcript_LO.docx
+├── tools/build_pitch_transcript.py
 └── .github/workflows/pages.yml
 ```
 
 ## Content safety
 
-ພາບ Screenshot ໃນ `assets/images/app/` ແລະ `assets/images/portal/` ມາຈາກ Development build/Portal ແລະອາດສະແດງຄ່າສະຫຼຸບ, ວັນທີ, ຂໍ້ມູນ Catalog ຫຼືຊື່ Service ຕາມສະຖານະໃນເວລາບັນທຶກ. ທຸກຄັ້ງກ່ອນ Deploy ຄວນກວດວ່າບໍ່ມີ Credential, Token, Password, ລາຍຊື່ລູກຄ້າ, QR ບັນຊີ ຫຼືຂໍ້ມູນສ່ວນບຸກຄົນ.
+ພາບ Screenshot ໃນ `assets/images/app/` ແລະ `assets/images/portal/` ມາຈາກ Development build/Backoffice Portal ແລະອາດສະແດງຄ່າສະຫຼຸບ, ວັນທີ, ຂໍ້ມູນ Catalog ຫຼືຊື່ Service ຕາມສະຖານະໃນເວລາບັນທຶກ. ທຸກຄັ້ງກ່ອນ Deploy ຄວນກວດວ່າບໍ່ມີ Credential, Token, Password, ລາຍຊື່ລູກຄ້າ, QR ບັນຊີ ຫຼືຂໍ້ມູນສ່ວນບຸກຄົນ.
